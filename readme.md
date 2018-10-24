@@ -6,6 +6,9 @@ Socket Basics
 - Send message from client to server
 - Send message to all clients
 - Send message to all clients except sender
+- The default namespace '/' -> io () -> no parameter
+- Custom namespace -> Use io.of('/your-name-space')
+
 
 Steps
 ==============
