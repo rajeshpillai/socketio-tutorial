@@ -41,8 +41,9 @@ io.on('connection', function (socket) {
 
     // Notify everyone including sender
     socket.emit('on-new-client-connected', {
-        message: `Welcome ${socket.id}`
+        message: `Welcome ${socket.id}: <br/> Total connections ${clients.length}`
     });
+
 
     // Notify everyone except sender
     socket.broadcast.emit('on-new-client-connected', {
