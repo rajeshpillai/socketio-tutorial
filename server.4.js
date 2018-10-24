@@ -32,7 +32,7 @@ io.on('connection', function (socket) {
     // Send a message to client -> Default 'message' event
     socket.send("Welcome to the world of Socket Programming!");
 
-    // Send a custom event
+    // Send a custom event to the connected client->one-on-one
     socket.emit('on-join', {
         id: socket.id,
         message: "You just joined the network!"
