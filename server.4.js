@@ -38,6 +38,7 @@ io.on('connection', function (socket) {
         message: "You just joined the network!"
     });
 
+    // todo:
     socket.on("client-hello", (data) => {
         console.log("Client says : ", data);
     })
