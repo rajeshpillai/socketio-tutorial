@@ -21,10 +21,6 @@
         socket.on("message", (data) => {
             alert(data);
         });
-
-        socket.on('on-join', function (data) {
-            $("#message").html(`<h2>Welcome <span class='green'>${data.id}</span>, ${data.message}`);
-        });
     </script>
 </body>
 
