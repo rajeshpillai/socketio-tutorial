@@ -28,7 +28,7 @@ io.on('connection', function (socket) {
     console.log("A client connected...", socket.id);
 
     // Send a message to client
-    socket.send("Welcome to the world of Socket Programmin!");
+    socket.send("Welcome to the world of Socket Programming!");
 
     // Emit an event to the opponent when the player leaves
     socket.on('disconnect', function () {
