@@ -1,3 +1,12 @@
+Socket Basics
+==================
+- Setup html
+- Web server and socket server
+- Send message from server to client
+- Send message from client to server
+- Send message to all clients
+- Send message to all clients except sender
+
 Steps
 ==============
 - Build the board
