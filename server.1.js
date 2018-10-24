@@ -1,6 +1,5 @@
 /*
     1.  Hello Socket, Server and Client
-    2.  Using built in 'message' Event
 */
 
 var express = require('express'),
@@ -26,9 +25,6 @@ const io = require('socket.io')(http);
 
 io.on('connection', function (socket) {
     console.log("A client connected...", socket.id);
-
-    // Send a message to client
-    socket.send("Welcome to the world of Socket Programmin!");
 
     // Emit an event to the opponent when the player leaves
     socket.on('disconnect', function () {
